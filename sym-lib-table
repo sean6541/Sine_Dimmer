@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name UCC20520DW)(type Legacy)(uri ${KIPRJMOD}/UCC20520DW.lib)(options "")(descr ""))
+  (lib (name UA78M33CDCYR)(type Legacy)(uri ${KIPRJMOD}/UA78M33CDCYR.lib)(options "")(descr ""))
+)
