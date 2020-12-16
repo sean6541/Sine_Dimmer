@@ -53,12 +53,12 @@ $EndComp
 $Comp
 L Connector:Screw_Terminal_01x03 J1
 U 1 1 5FC7E248
-P 2000 4800
-F 0 "J1" H 2079 4750 50  0000 L CNN
-F 1 "Screw_Terminal_01x03" H 2079 4841 50  0000 L CNN
-F 2 "Connector_Wire:SolderWire-1.5sqmm_1x03_P6mm_D1.7mm_OD3mm" H 2000 4800 50  0001 C CNN
-F 3 "~" H 2000 4800 50  0001 C CNN
-	1    2000 4800
+P 2250 4800
+F 0 "J1" H 2329 4750 50  0000 L CNN
+F 1 "Screw_Terminal_01x03" H 2329 4841 50  0000 L CNN
+F 2 "Connector_Wire:SolderWire-1.5sqmm_1x03_P6mm_D1.7mm_OD3mm" H 2250 4800 50  0001 C CNN
+F 3 "~" H 2250 4800 50  0001 C CNN
+	1    2250 4800
 	-1   0    0    1   
 $EndComp
 $Comp
@@ -71,18 +71,6 @@ F 2 "Converter_ACDC:Converter_ACDC_MeanWell_IRM-05-xx_THT" H 3550 4350 50  0001 
 F 3 "https://www.meanwell.com/Upload/PDF/IRM-05/IRM-05-SPEC.PDF" H 3550 4300 50  0001 C CNN
 F 4 "IRM-05-12" H 3550 4700 50  0001 C CNN "MPN"
 	1    3550 4700
-	1    0    0    -1  
-$EndComp
-$Comp
-L Converter_ACDC:IRM-03-12 PS2
-U 1 1 5FC89BDD
-P 3550 5250
-F 0 "PS2" H 3550 4975 50  0000 C CNN
-F 1 "IRM-03-12" H 3550 4884 50  0000 C CNN
-F 2 "Converter_ACDC:Converter_ACDC_MeanWell_IRM-03-xx_THT" H 3550 4900 50  0001 C CNN
-F 3 "https://www.meanwell.com/Upload/PDF/IRM-03/IRM-03-SPEC.PDF" H 3550 4850 50  0001 C CNN
-F 4 "IRM-03-12" H 3550 5250 50  0001 C CNN "MPN"
-	1    3550 5250
 	1    0    0    -1  
 $EndComp
 Text GLabel 5150 4900 0    50   Input ~ 0
@@ -176,18 +164,7 @@ Wire Wire Line
 Wire Wire Line
 	7900 6150 2950 6150
 Wire Wire Line
-	2950 4700 2950 4600
-Wire Wire Line
-	2950 3650 7900 3650
-Wire Wire Line
-	2950 4600 3150 4600
-Connection ~ 2950 4600
-Wire Wire Line
-	2950 4600 2950 4400
-Wire Wire Line
 	3150 4800 2950 4800
-Wire Wire Line
-	3050 4700 2950 4700
 Wire Wire Line
 	6750 5600 6750 6000
 Wire Wire Line
@@ -248,8 +225,9 @@ U 1 1 5FD214AB
 P 8700 4700
 F 0 "L2" V 8890 4700 50  0000 C CNN
 F 1 "100u" V 8799 4700 50  0000 C CNN
-F 2 "Inductor_THT:L_Toroid_Vertical_L28.6mm_W14.3mm_P11.43mm_Bourns_5700" H 8700 4700 50  0001 C CNN
+F 2 "Sine_Dimmer:uxcell_Toroid_100uH_20A" H 8700 4700 50  0001 C CNN
 F 3 "~" H 8700 4700 50  0001 C CNN
+F 4 "https://www.amazon.com/dp/B07FK5N39T" H 8700 4700 50  0001 C CNN "MPN"
 	1    8700 4700
 	0    -1   -1   0   
 $EndComp
@@ -314,7 +292,6 @@ Wire Wire Line
 Connection ~ 8400 4700
 Wire Wire Line
 	8400 4700 7900 4700
-Connection ~ 2950 4800
 Wire Wire Line
 	9300 6250 9300 4900
 Connection ~ 4050 4800
@@ -349,53 +326,26 @@ Connection ~ 4050 4600
 $Comp
 L Device:L L1
 U 1 1 5FD7C15B
-P 2450 4400
-F 0 "L1" V 2640 4400 50  0000 C CNN
-F 1 "47u" V 2549 4400 50  0000 C CNN
-F 2 "Inductor_THT:L_Toroid_Vertical_L26.7mm_W14.0mm_P10.16mm_Pulse_D" H 2450 4400 50  0001 C CNN
-F 3 "~" H 2450 4400 50  0001 C CNN
-	1    2450 4400
-	0    -1   -1   0   
+P 3250 4100
+F 0 "L1" H 3207 4054 50  0000 R CNN
+F 1 "47u" H 3207 4145 50  0000 R CNN
+F 2 "Inductor_THT:L_Toroid_Vertical_L26.7mm_W14.0mm_P10.16mm_Pulse_D" H 3250 4100 50  0001 C CNN
+F 3 "~" H 3250 4100 50  0001 C CNN
+	1    3250 4100
+	-1   0    0    1   
 $EndComp
 $Comp
 L Device:C C1
 U 1 1 5FD8246A
-P 2650 4600
-F 0 "C1" H 2765 4646 50  0000 L CNN
-F 1 "4.7u" H 2765 4555 50  0000 L CNN
-F 2 "Capacitor_THT:C_Rect_L31.5mm_W13.0mm_P27.50mm_MKS4" H 2688 4450 50  0001 C CNN
-F 3 "~" H 2650 4600 50  0001 C CNN
-F 4 "B32524Q6475K" H 2650 4600 50  0001 C CNN "MPN"
-	1    2650 4600
+P 2950 4100
+F 0 "C1" H 2835 4146 50  0000 R CNN
+F 1 "4.7u" H 2835 4055 50  0000 R CNN
+F 2 "Capacitor_THT:C_Rect_L31.5mm_W13.0mm_P27.50mm_MKS4" H 2988 3950 50  0001 C CNN
+F 3 "~" H 2950 4100 50  0001 C CNN
+F 4 "B32524Q6475K" H 2950 4100 50  0001 C CNN "MPN"
+	1    2950 4100
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	2950 4400 2650 4400
-Connection ~ 2950 4400
-Wire Wire Line
-	2950 4400 2950 3650
-Wire Wire Line
-	2650 4400 2650 4450
-Connection ~ 2650 4400
-Wire Wire Line
-	2650 4400 2600 4400
-Wire Wire Line
-	2650 4750 2650 4800
-Wire Wire Line
-	2650 4800 2200 4800
-Wire Wire Line
-	2650 4800 2950 4800
-Connection ~ 2650 4800
-Wire Wire Line
-	2300 4400 2250 4400
-Wire Wire Line
-	2250 4700 2200 4700
-Wire Wire Line
-	2250 6250 2250 4900
-Wire Wire Line
-	2250 4900 2200 4900
-Wire Wire Line
-	2250 6250 9300 6250
 $Comp
 L power:VCC #PWR02
 U 1 1 5FDAC585
@@ -420,10 +370,6 @@ F 3 "" H 4050 4800 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	2950 4800 2950 5350
-Wire Wire Line
-	3150 5150 3050 5150
-Wire Wire Line
-	3050 4700 3050 5150
 Wire Wire Line
 	3150 5350 2950 5350
 Connection ~ 2950 5350
@@ -522,22 +468,16 @@ Wire Wire Line
 $Comp
 L Device:R_US R6
 U 1 1 5FE182F5
-P 7300 2750
-F 0 "R6" V 7095 2750 50  0000 C CNN
-F 1 "3.3k" V 7186 2750 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" V 7340 2740 50  0001 C CNN
-F 3 "~" H 7300 2750 50  0001 C CNN
-F 4 "C26010" H 7300 2750 50  0001 C CNN "LCSC"
-F 5 "CRCW08053K30FKEAC" H 7300 2750 50  0001 C CNN "MPN"
-	1    7300 2750
+P 7350 2800
+F 0 "R6" V 7145 2800 50  0000 C CNN
+F 1 "3.3k" V 7236 2800 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 7390 2790 50  0001 C CNN
+F 3 "~" H 7350 2800 50  0001 C CNN
+F 4 "C26010" H 7350 2800 50  0001 C CNN "LCSC"
+F 5 "CRCW08053K30FKEAC" H 7350 2800 50  0001 C CNN "MPN"
+	1    7350 2800
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	7100 2750 7150 2750
-Wire Wire Line
-	7450 2750 7450 3150
-Wire Wire Line
-	7450 3150 6500 3150
 $Comp
 L power:GND #PWR04
 U 1 1 5FE22C82
@@ -600,8 +540,6 @@ Wire Wire Line
 Wire Wire Line
 	5250 1650 5550 1650
 Connection ~ 5550 1650
-Wire Wire Line
-	5250 3150 5550 3150
 Connection ~ 5550 3150
 $Comp
 L Device:C_Small C7
@@ -620,37 +558,22 @@ Wire Wire Line
 	3850 2500 3850 1650
 Wire Wire Line
 	3850 2700 3850 3150
-Wire Wire Line
-	3850 3150 5250 3150
-Connection ~ 5250 3150
-Text GLabel 7500 2400 2    50   Input ~ 0
+Text GLabel 7500 2650 2    50   Input ~ 0
 dis
-Text GLabel 7500 2200 2    50   Input ~ 0
+Text GLabel 7500 2450 2    50   Input ~ 0
 pwm
-Wire Wire Line
-	7500 2200 7300 2200
-Wire Wire Line
-	7300 2200 7300 2250
-Wire Wire Line
-	7300 2250 7100 2250
-Wire Wire Line
-	7100 2350 7300 2350
-Wire Wire Line
-	7300 2350 7300 2400
-Wire Wire Line
-	7300 2400 7500 2400
 $Comp
 L Device:Fuse F1
 U 1 1 5FCF3FCF
-P 2250 4550
-F 0 "F1" H 2310 4596 50  0000 L CNN
-F 1 "15" H 2310 4505 50  0000 L CNN
-F 2 "Fuse:Fuse_SunFuse-6HP" V 2180 4550 50  0001 C CNN
-F 3 "~" H 2250 4550 50  0001 C CNN
-F 4 "C151084" H 2250 4550 50  0001 C CNN "LCSC"
-F 5 "0217015.MXEP" H 2250 4550 50  0001 C CNN "MPN"
-	1    2250 4550
-	1    0    0    -1  
+P 2700 4600
+F 0 "F1" V 2503 4600 50  0000 C CNN
+F 1 "15" V 2594 4600 50  0000 C CNN
+F 2 "Fuse:Fuse_SunFuse-6HP" V 2630 4600 50  0001 C CNN
+F 3 "~" H 2700 4600 50  0001 C CNN
+F 4 "C151084" H 2700 4600 50  0001 C CNN "LCSC"
+F 5 "0217015.MXEP" H 2700 4600 50  0001 C CNN "MPN"
+	1    2700 4600
+	0    1    1    0   
 $EndComp
 $Comp
 L Device:R_US R7
@@ -742,6 +665,77 @@ Wire Wire Line
 	4250 4600 4050 4600
 Wire Wire Line
 	6550 3900 6550 4300
+$Comp
+L Converter_ACDC:IRM-03-12 PS2
+U 1 1 5FC89BDD
+P 3550 5250
+F 0 "PS2" H 3550 4975 50  0000 C CNN
+F 1 "IRM-03-12" H 3550 4884 50  0000 C CNN
+F 2 "Converter_ACDC:Converter_ACDC_MeanWell_IRM-03-xx_THT" H 3550 4900 50  0001 C CNN
+F 3 "https://www.meanwell.com/Upload/PDF/IRM-03/IRM-03-SPEC.PDF" H 3550 4850 50  0001 C CNN
+F 4 "IRM-03-12" H 3550 5250 50  0001 C CNN "MPN"
+	1    3550 5250
+	1    0    0    -1  
+$EndComp
 Wire Wire Line
-	5250 1850 5250 3150
+	3150 5150 3050 5150
+Wire Wire Line
+	3050 5150 3050 4600
+Wire Wire Line
+	3050 4600 3150 4600
+Wire Wire Line
+	3250 3950 3250 3900
+Wire Wire Line
+	3250 3650 7900 3650
+Wire Wire Line
+	2950 4250 2950 4800
+Connection ~ 2950 4800
+Wire Wire Line
+	3250 4250 3250 4400
+Wire Wire Line
+	3250 4400 3050 4400
+Wire Wire Line
+	3050 4400 3050 4600
+Connection ~ 3050 4600
+Wire Wire Line
+	2950 3950 2950 3900
+Wire Wire Line
+	2950 3900 3250 3900
+Connection ~ 3250 3900
+Wire Wire Line
+	3250 3900 3250 3650
+Wire Wire Line
+	2450 4700 2450 4600
+Wire Wire Line
+	2450 4600 2550 4600
+Wire Wire Line
+	2850 4600 3050 4600
+Wire Wire Line
+	2450 4800 2950 4800
+Wire Wire Line
+	2450 4900 2450 6250
+Wire Wire Line
+	2450 6250 9300 6250
+Wire Wire Line
+	3850 3150 5250 3150
+Wire Wire Line
+	5250 1850 5250 1950
+Wire Wire Line
+	5250 1950 5250 3150
+Connection ~ 5250 1950
+Connection ~ 5250 3150
+Wire Wire Line
+	5250 3150 5550 3150
+Wire Wire Line
+	7100 2450 7500 2450
+Wire Wire Line
+	7100 2750 7200 2750
+Wire Wire Line
+	7200 2750 7200 2800
+Wire Wire Line
+	7500 2800 7500 3150
+Wire Wire Line
+	6500 3150 7500 3150
+Wire Wire Line
+	7500 2650 7100 2650
 $EndSCHEMATC
