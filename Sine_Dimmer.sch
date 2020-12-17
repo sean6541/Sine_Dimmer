@@ -26,19 +26,6 @@ F 4 "UCC20520" H 5850 4900 50  0001 C CNN "MPN"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:D_Bridge_+AA- D1
-U 1 1 5FC6F291
-P 7900 4350
-F 0 "D1" H 8244 4396 50  0000 L CNN
-F 1 "D_Bridge_+AA-" H 8244 4305 50  0000 L CNN
-F 2 "Diode_THT:Diode_Bridge_32.0x5.6x17.0mm_P10.0mm_P7.5mm" H 7900 4350 50  0001 C CNN
-F 3 "~" H 7900 4350 50  0001 C CNN
-F 4 "C151759" H 7900 4350 50  0001 C CNN "LCSC"
-F 5 "GBJ3506-BP" H 7900 4350 50  0001 C CNN "MPN"
-	1    7900 4350
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:Q_NMOS_GDS Q1
 U 1 1 5FC70105
 P 7200 4350
@@ -51,12 +38,12 @@ F 4 "IPW60R037P7" H 7200 4350 50  0001 C CNN "MPN"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector:Screw_Terminal_01x03 J1
+L Connector:Screw_Terminal_01x02 J1
 U 1 1 5FC7E248
 P 2250 4800
 F 0 "J1" H 2329 4750 50  0000 L CNN
-F 1 "Screw_Terminal_01x03" H 2329 4841 50  0000 L CNN
-F 2 "Connector_Wire:SolderWire-1.5sqmm_1x03_P6mm_D1.7mm_OD3mm" H 2250 4800 50  0001 C CNN
+F 1 "Screw_Terminal_01x02" H 2329 4841 50  0000 L CNN
+F 2 "Connector_Wire:SolderWire-1.5sqmm_1x02_P6mm_D1.7mm_OD3mm" H 2250 4800 50  0001 C CNN
 F 3 "~" H 2250 4800 50  0001 C CNN
 	1    2250 4800
 	-1   0    0    1   
@@ -209,12 +196,12 @@ Connection ~ 6750 5600
 Wire Wire Line
 	7900 6150 7900 5700
 $Comp
-L Connector:Screw_Terminal_01x03 J2
+L Connector:Screw_Terminal_01x02 J2
 U 1 1 5FD1C1C3
 P 9500 4800
 F 0 "J2" H 9418 4475 50  0000 C CNN
-F 1 "Screw_Terminal_01x03" H 9418 4566 50  0000 C CNN
-F 2 "Connector_Wire:SolderWire-1.5sqmm_1x03_P6mm_D1.7mm_OD3mm" H 9500 4800 50  0001 C CNN
+F 1 "Screw_Terminal_01x02" H 9418 4566 50  0000 C CNN
+F 2 "Connector_Wire:SolderWire-1.5sqmm_1x02_P6mm_D1.7mm_OD3mm" H 9500 4800 50  0001 C CNN
 F 3 "~" H 9500 4800 50  0001 C CNN
 	1    9500 4800
 	1    0    0    1   
@@ -292,8 +279,6 @@ Wire Wire Line
 Connection ~ 8400 4700
 Wire Wire Line
 	8400 4700 7900 4700
-Wire Wire Line
-	9300 6250 9300 4900
 Connection ~ 4050 4800
 Wire Wire Line
 	4050 4800 4250 4800
@@ -663,8 +648,6 @@ Wire Wire Line
 Connection ~ 4250 4600
 Wire Wire Line
 	4250 4600 4050 4600
-Wire Wire Line
-	6550 3900 6550 4300
 $Comp
 L Converter_ACDC:IRM-03-12 PS2
 U 1 1 5FC89BDD
@@ -713,10 +696,6 @@ Wire Wire Line
 Wire Wire Line
 	2450 4800 2950 4800
 Wire Wire Line
-	2450 4900 2450 6250
-Wire Wire Line
-	2450 6250 9300 6250
-Wire Wire Line
 	3850 3150 5250 3150
 Wire Wire Line
 	5250 1850 5250 1950
@@ -738,4 +717,25 @@ Wire Wire Line
 	6500 3150 7500 3150
 Wire Wire Line
 	7500 2650 7100 2650
+$Comp
+L Device:D_Bridge_+AA- D1
+U 1 1 5FC6F291
+P 7900 4350
+F 0 "D1" H 8244 4396 50  0000 L CNN
+F 1 "D_Bridge_+AA-" H 8244 4305 50  0000 L CNN
+F 2 "Diode_THT:Diode_Bridge_32.0x5.6x17.0mm_P10.0mm_P7.5mm" H 7900 4350 50  0001 C CNN
+F 3 "~" H 7900 4350 50  0001 C CNN
+F 4 "C151759" H 7900 4350 50  0001 C CNN "LCSC"
+F 5 "GBJ3506-BP" H 7900 4350 50  0001 C CNN "MPN"
+	1    7900 4350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6550 3900 6550 4100
+Wire Wire Line
+	6550 4100 6550 4200
+Connection ~ 6550 4100
+Wire Wire Line
+	6550 4200 6550 4300
+Connection ~ 6550 4200
 $EndSCHEMATC
