@@ -1345,4 +1345,8 @@ Connection ~ 1450 1300
 Wire Wire Line
 	2850 1300 2900 1300
 Connection ~ 2900 1300
+Wire Wire Line
+	3400 2000 3500 2000
+Connection ~ 3400 2000
+Connection ~ 3500 2000
 $EndSCHEMATC
