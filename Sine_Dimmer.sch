@@ -5,7 +5,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title "Sine Dimmer"
-Date "2020-12-01"
+Date "2020-12-21"
 Rev "1.0"
 Comp "Sean Olson"
 Comment1 ""
